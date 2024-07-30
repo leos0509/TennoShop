@@ -1,0 +1,115 @@
+@import '../../../global.scss';
+
+.checkout-section {
+    display: flex;
+    flex-direction: row;
+    background-color: $ivory;
+    padding: 48px 64px;
+    padding-bottom: 128px;
+    gap: 16px;
+
+    .heading {
+        padding-bottom: 8px;
+    }
+
+    .product-display {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .receipt-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .receipt-content {
+            display: flex;
+            flex-direction: column;
+            width: 409px;
+            border: $thin-border;
+            padding: 24px 36px;
+            gap: 16px;
+
+            .receipt-heading {
+                font-family: $display-font;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            .horizontal-div {
+                width: 100%;
+                border: dashed 1px $charcoal;
+            }
+
+            .product-count {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: $display-font;
+                }
+
+                .total-count {
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                }
+            }
+
+            .discount {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+
+                .discount-input {
+                    width: 100%;
+                    font-size: 1rem;
+                    background-color: #fff;
+                    position: relative;
+                    display: inline-flex;
+                    color: $charcoal;
+                    background-color: $ivory;
+                    padding: 8px 16px;
+                    justify-content: center;
+                    align-items: center;
+                    border: $thin-border;
+                    border-radius: 100px;
+                }
+            }
+
+            .button-container {
+                display: flex;
+                flex: 1;
+
+                button {
+                    width: 100%;
+                    color: $charcoal;
+                    background-color: $ivory;
+                    padding: 8px 16px;
+                    justify-content: center;
+                    align-items: center;
+                    border: $thin-border;
+                    border-radius: 100px;
+                    transition: background-color 0.3s ease;
+                    text-transform: uppercase;
+                }
+        
+                button:hover {
+                    background-color: $yellow-green;
+                    color: $ivory;
+                    transition: ease-in-out 0.2s;
+                }
+        
+                button:active {
+                    background-color: $dark-slate-gray;
+                    transition: ease-in-out 0.2s;
+                }
+            }
+        }
+    }
+}

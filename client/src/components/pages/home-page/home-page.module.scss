@@ -1,0 +1,158 @@
+@import '../../../global.scss';
+
+.home-page {
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: $ivory;
+    border-bottom: 2px solid $charcoal;
+    padding: 8px 64px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 64px;
+    gap: 48px;
+    background-color: $ivory;
+
+    .img-container {
+        border: $thin-border;
+        width: 50%;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 0px;
+        align-items: flex-start;
+        justify-content: center;
+
+        .txt-b {
+            margin-top: -8px;
+        }
+
+        .txt-body-1 {
+            margin-top: 36px;
+        }
+
+        .button-collection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 12px;
+
+            button {
+                color: $charcoal;
+                width: 50%;
+                background-color: $ivory;
+                padding: 8px 16px;
+                justify-content: center;
+                align-items: center;
+                border: $thin-border;
+                border-radius: 100px;
+                transition: background-color 0.3s ease;
+                text-transform: uppercase;
+            }
+
+            .button-left:hover {
+                background-color: $dark-slate-gray;
+                transition: ease-in-out 0.2s;
+            }
+
+            .button-right:hover {
+                background-color: $yellow-green;
+                color: $ivory;
+                transition: ease-in-out 0.2s;
+            }
+
+            .button-left:active {
+                background-color: $ivory;
+                color: $charcoal;
+                transition: ease-in-out 0.2s;
+            }
+
+            .button-right:active {
+                background-color: $ivory;
+                color: $charcoal;
+                transition: ease-in-out 0.2s;
+            }
+
+            .button-left {
+                background-color: $yellow-green;
+                color: $ivory;
+            }
+        }
+    }
+}
+
+.horizontal-div {
+    width: 100%;
+    height: 40px;
+    background-color: $yellow-green;
+    border-top: $thin-border;
+    border-bottom: $thin-border;
+}
+
+.product-query-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    background-color: $ivory;
+    padding: 24px 64px;
+
+    .filter-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .button-collection {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+    
+            button {
+                color: $charcoal;
+                background-color: $ivory;
+                padding: 8px 16px;
+                justify-content: center;
+                align-items: center;
+                border: $thin-border;
+                border-radius: 100px;
+                transition: background-color 0.3s ease;
+            }
+    
+            button:hover {
+                background-color: $yellow-green;
+                color: $ivory;
+                transition: ease-in-out 0.2s;
+            }
+    
+            button:active {
+                background-color: $dark-slate-gray;
+                transition: ease-in-out 0.2s;
+            }
+        }
+    }
+    
+    .products-display {
+        display: grid;
+        padding: 24px 0;
+        padding-bottom: 48px;
+        gap: 12px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+} 

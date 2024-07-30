@@ -1,0 +1,96 @@
+@import '../../../global.scss';
+
+:root {
+    max-width: 100%;
+    background-color: $ivory;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+    
+
+    .login-content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border: $thin-border;
+        padding: 48px;
+
+        .login-heading {
+            text-align: center;
+            align-self: center;
+            border: $thin-border;
+            width: fit-content;
+            padding: 16px 48px;
+            border-radius: 100px;
+            background-color: $charcoal;
+            color: $ivory;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+    
+            .input-heading {
+                padding-left: 8px;
+                padding-top: 16px;
+                padding-bottom: 4px;
+            }
+
+            .button-container {
+                display: flex;
+                flex: 1;
+                padding-top: 16px;
+
+                button {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    width: 100%;
+                    color: $ivory;
+                    background-color: $yellow-green;
+                    padding: 16px 16px;
+                    justify-content: center;
+                    align-items: center;
+                    border: $thin-border;
+                    border-radius: 100px;
+                    transition: background-color 0.3s ease;
+                    text-transform: uppercase;
+                }
+        
+                button:hover {
+                    background-color: $yellow-green;
+                    color: $ivory;
+                    transition: ease-in-out 0.2s;
+                }
+        
+                button:active {
+                    background-color: $dark-slate-gray;
+                    transition: ease-in-out 0.2s;
+                }
+            }
+        }
+    }
+
+    
+}
+
+.login-input {
+    width: 100%;
+    font-size: 1rem;
+    background-color: #fff;
+    position: relative;
+    display: inline-flex;
+    color: $charcoal;
+    background-color: $ivory;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border: $thin-border;
+    border-radius: 100px;
+}

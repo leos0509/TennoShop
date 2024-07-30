@@ -1,0 +1,29 @@
+@import '../../../global.scss';
+
+.root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 0px;
+    gap: 16px;
+
+    .category-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .category-btn:hover {
+        text-decoration: underline;
+    }
+
+    .category-btn:active {
+        text-decoration: underline;
+    }
+}
+  
+.btn-container {
+    flex-wrap: wrap;
+}
+

@@ -1,0 +1,69 @@
+@import '../../../global.scss';
+
+.btn-container {
+    position: relative;
+}
+
+.btn-container:hover {
+    transform: translate(-2px, -2px);
+    transition: ease-in-out 0.2s;
+}
+
+.btn-container:hover .btn-shadow-box {
+    display: block;
+}
+
+.main-btn {
+    position: relative;
+    display: inline-flex;
+    z-index: 1;
+    color: $charcoal;
+    background-color: $ivory;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border: $thin-border;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shadow-box {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 0;
+    color: $charcoal;
+    background-color: $charcoal;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border: $thin-border;
+    border-radius: 100px;
+}
+
+// Define the keyframes animation
+// @keyframes flash {
+//     0% {
+//         background-color: $ivory;
+//     }
+//     50% {
+//         background-color: $charcoal;
+//     }
+//     100% {
+//         background-color: $ivory;
+//     }
+// }
+
+// Apply the animation on hover
+// .main-btn:hover {
+//     animation: flash 1s infinite;
+// }
+
+.main-btn:active {
+    animation: none;
+    transition: ease-in-out 0.1s;
+    background-color: $yellow-green;
+    transform: translateY(3px) translateX(3px);
+}
